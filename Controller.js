@@ -25,6 +25,7 @@ class Controller {
         if(contact.id){
             this.contactsCollection.update(contact.id, contact)
                 .then((newContact) => {
+                    console.log(newContact)
                     this.contactListView.replaceContact(contact.id, newContact)
                     this.contactFormView.clearForm()
                 })

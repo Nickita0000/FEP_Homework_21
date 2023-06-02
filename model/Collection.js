@@ -27,6 +27,7 @@ class Collection {
             .then((newContact) => {
                 this.addListItem(newContact)
 
+
                 return newContact
             })
     }
@@ -57,7 +58,7 @@ class Collection {
     }
 
     findContactById(id) {
-        return this.#initialList = this.#initialList
+        return this.#initialList
             .find(contact => contact.id === id)
     }
 }
